@@ -1,0 +1,2 @@
+Real-browser tests (headless Chromium via puppeteer-core + @sparticuz/chromium). Pages are served over http://localhost with `shim.js` standing in for chrome.* APIs; background.js runs inside the page; Pexels/Google Fonts requests are mocked. NOT a loaded-extension test.
+Setup: npm i puppeteer-core @sparticuz/chromium; create test videos in $ASSETS (s1-3.mp4, friend1.mp4, friend1_copy.mp4 (copy), friend2.mp4, 006.mp4, IMG_2031.mp4, other/friend1.mp4 = same name+size as friend1 with 1 byte changed). Run: node tests/test.mjs
