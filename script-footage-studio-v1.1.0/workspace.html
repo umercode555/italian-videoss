@@ -1,0 +1,17 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Script → Footage</title><link rel="stylesheet" href="workspace.css"></head><body>
+<header>
+ <b class="logo">🎬 Script → Footage</b>
+ <span class="stat" id="sProg">0/0</span><span class="stat" id="sTot">Footage 0:00</span><span class="stat" id="sTim" title="Live work timer">⏱ 0:00</span>
+ <span class="grow"></span>
+ <button id="bUp" class="b">Upload script (.txt)</button><button id="bPaste" class="b">Paste script</button>
+ <button id="bResume" class="b p">Resume</button><button id="bFind" class="b p">🔎 Find stock videos</button><button id="bEditor" class="b w">Open video editor →</button>
+ <button id="bJson" class="b">Export JSON</button><button id="bMedia" class="b">Save media to disk</button><button id="bSet" class="b">Settings</button>
+ <input type="file" id="fScript" accept=".txt,.md,text/plain" hidden>
+</header>
+<main>
+ <aside><div class="tools"><label><input type="checkbox" id="onlyMiss"> Missing only</label><span id="dlst"></span></div><div id="list"></div></aside>
+ <section id="detail"></section>
+</main>
+<div id="modal" class="modal"><div class="card" id="card"></div></div><div id="toast"></div>
+<input type="file" id="fMine" accept="video/*" hidden>
+<script src="lib.js"></script><script src="workspace.js"></script></body></html>
